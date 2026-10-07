@@ -1,0 +1,29 @@
+/* Estilos generales para TechLogix S.A. */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.card {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.table th {
+    background-color: #212529 !important;
+    color: #fff;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 1.5rem 0;
+    background-color: #e9ecef;
+    color: #6c757d;
+    text-align: center;
+    font-size: 0.9rem;
+}

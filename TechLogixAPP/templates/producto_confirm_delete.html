@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Eliminar Producto - TechLogix{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-5">
+        <div class="card shadow-sm border-danger">
+            <div class="card-body text-center p-4">
+                <h3 class="card-title text-danger mb-3">Confirmar Eliminación</h3>
+                <p class="fs-5 text-muted">¿Estás seguro de que deseas eliminar el producto <strong>{{ producto.nombre }}</strong> (SKU: <code>{{ producto.sku }}</code>)?</p>
+                <form method="POST" class="mt-4">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger px-4">Sí, Eliminar</button>
+                    <a href="{% url 'admin_panel' %}" class="btn btn-secondary px-4 ms-2">Cancelar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

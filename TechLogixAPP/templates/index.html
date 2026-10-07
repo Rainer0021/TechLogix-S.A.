@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}TechLogix S.A. - Inicio{% endblock %}
+
+{% block content %}
+<div class="text-center py-5">
+    <div class="p-5 bg-white rounded-3 shadow-sm border">
+        <h1 class="display-5 fw-bold text-primary">Bienvenido a TechLogix S.A.</h1>
+        <p class="col-md-8 fs-4 mx-auto text-muted mt-3">
+            Empresa distribuidora de tecnología. Modernizamos la gestión de nuestro catálogo e inventario con la más alta seguridad y persistencia en PostgreSQL.
+        </p>
+        <div class="mt-4">
+            <a href="{% url 'catalogo' %}" class="btn btn-primary btn-lg me-2">Ver Catálogo Público</a>
+            <a href="{% url 'admin_panel' %}" class="btn btn-secondary btn-lg">Acceso Administrativo</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
